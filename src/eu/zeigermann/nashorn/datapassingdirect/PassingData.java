@@ -13,6 +13,8 @@ public class PassingData {
         int valueIn = 10;
         Integer valueOut = (Integer) nashorn.eval("pass(" + valueIn + ")");
         System.out.println(valueIn == valueOut.intValue());
+//        Double double1 = (Double) nashorn.eval("pass(" + valueIn + ")");
+//        System.out.println(double1);
 
         Integer result = (Integer) nashorn.eval("1 + 2");
         System.out.println(result == 3);
