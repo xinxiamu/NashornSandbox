@@ -17,8 +17,8 @@ public class PassingData {
         simpleBindings.put("globalValue", valueIn);
         simpleBindings.put("user", new User("mu", 18,new Date(),"2017-05-06 06:09"));
         
-        nashorn.eval("print (globalValue)", simpleBindings);
-        nashorn.eval("print (user)", simpleBindings);
+//        nashorn.eval("print (globalValue)", simpleBindings);
+//        nashorn.eval("print (user)", simpleBindings);
 
         nashorn.eval("load('src/eu/zeigermann/nashorn/databinding/dataAccess.js')", simpleBindings);
         Integer valueOut = (Integer) nashorn.eval("passGlobalValue()", simpleBindings);
@@ -27,9 +27,8 @@ public class PassingData {
 //        User user = (User) nashorn.eval("passGlobalValue2()",simpleBindings);
 //        System.out.println("----user:" + user.getAge());
         Integer integer = (Integer) nashorn.eval("passGlobalValue2()",simpleBindings);
-        System.out.println("passGlobalValue2·µ»ØÖµ£º" + integer);
+        System.out.println("passGlobalValue2è¿”å›žï¼š" + integer);
         
-        //¶ÔÏó×÷Îª²ÎÊý
 //        nashorn.eval("load('src/eu/zeigermann/nashorn/databinding/dataAccess.js')");
 //        User user2 = new User("zhang", 22);
 //        String userName = (String) nashorn.eval("passGlobalValue3("+user2+")");
