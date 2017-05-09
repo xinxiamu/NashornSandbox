@@ -19,6 +19,9 @@ public class PassingData {
         
         nashorn.eval("print (globalValue)", simpleBindings);
         nashorn.eval("print (user)", simpleBindings);
+        
+//        nashorn.eval("function a(){print('abc')}",simpleBindings);
+//        nashorn.eval("a()",simpleBindings);
 
         nashorn.eval("load('src/eu/zeigermann/nashorn/databinding/dataAccess.js')", simpleBindings);
         Integer valueOut = (Integer) nashorn.eval("passGlobalValue()", simpleBindings);
