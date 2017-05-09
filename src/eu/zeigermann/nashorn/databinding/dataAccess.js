@@ -24,6 +24,18 @@ function passGlobalValue2() {
 }
 
 function passGlobalValue3(user) {
-//	print(user);
+	
 	return "abc";
 }
+
+function passGlobalValue4() {
+//	var u = Java.type("eu.zeigermann.nashorn.databinding.User");  
+//	u = user;
+	print(globalValue);
+	user.age = 12;
+	return user;
+}
+
+
+
+
