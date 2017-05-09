@@ -20,6 +20,8 @@ public class PassingData {
         nashorn.eval("print (globalValue)", simpleBindings);
         nashorn.eval("print (user)", simpleBindings);
         
+//        nashorn.eval("var a=3.2; var b=3.6 + 0.4 + a; print(b + globalValue);",simpleBindings);
+//        
 //        nashorn.eval("function a(){print('abc')}",simpleBindings);
 //        nashorn.eval("a()",simpleBindings);
 
